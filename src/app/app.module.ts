@@ -7,13 +7,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { DetailsVehicleParkingComponent } from './details-vehicle-parking/details-vehicle-parking.component';
+import { CreateEntryComponent } from './create-entry/create-entry.component';
+import { CreateDepartureComponent } from './create-departure/create-departure.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     VehicleComponent,
-    CreateVehicleComponent
+    CreateVehicleComponent,
+    DetailsVehicleParkingComponent,
+    CreateEntryComponent,
+    CreateDepartureComponent
   ],
   imports: [
     BrowserModule,

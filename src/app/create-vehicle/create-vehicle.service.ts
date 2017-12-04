@@ -23,6 +23,7 @@ export class CreateVehicleService {
   }
   
   public save(vehicle : VehicleModel): Observable<RestResponse> {
+    //return this.http.post<RestResponse>("http://localhost:8886/createVehicle",vehicle);
     return this.http.post<RestResponse>("http://localhost:8886/createVehicle",vehicle);
   }
 }

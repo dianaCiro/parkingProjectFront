@@ -1,12 +1,14 @@
 <h1>Registered vehicles</h1>
 <div style="padding:15px"></div>
-<table class="table">
+<table  class="table">
   <thead>
     <tr>
       <th>NumberPlate</th>
       <th>Cylinder</th>
       <th>Brand</th>
       <th>Vehicle Type</th>
+      <th>Register entry</th>
+      <th>Generate receip</th>
     </tr>
   </thead>
   <tbody>
@@ -15,7 +17,10 @@
       <td>{{item.cylinder}}</td>
       <td>{{item.brand}}</td>
       <td>{{item.vehicleType}}</td>
+      <td><input  type="submit" value="RegisterEntry" (click)="registerEntry(item)"></td>
+      <td><input  type="submit" value="RegisterDeparture" (click)="registerDeparture(item)"></td>
     </tr>
     
   </tbody>
 </table>
+
