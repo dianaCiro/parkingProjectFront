@@ -1,0 +1,29 @@
+<div class="divForm">
+  <h1>Create new vehicle</h1>
+  <form action="/action_page.php" class="main-form">
+    <div *ngIf="!isValid" class="alert alert-danger" role="alert">
+      <strong>Danger!</strong> {{message}}
+    </div>
+
+    <label for="numberPlate">
+      <span class="required">*</span>Number plate</label>
+    <input type="text" id="numberPlate" name="numberPlate" [(ngModel)]="vehicle.numberPlate" placeholder="numberPlate">
+
+    <label for="brand">
+      <span class="required">*</span>Brand</label>
+    <input type="text" id="brand" name="brand" [(ngModel)]="vehicle.brand" placeholder="brand">
+
+    <label for="cylinder">
+      <span class="required">*</span>Cylinder</label>
+    <input type="text" id="cylinder" name="cylinder" [(ngModel)]="vehicle.cylinder" placeholder="cylinder">
+
+    <label for="vehicleType">
+      <span class="required">*</span>Vehicle type</label>
+    <select id="vehicleType" name="vehicleType" [(ngModel)]="vehicle.vehicleType">
+      <option value="motorcycle">Motorcycle</option>
+      <option value="car">Car</option>
+    </select>
+
+    <input type="submit" (click)="save()" value="Register">
+  </form>
+</div>
