@@ -1,6 +1,7 @@
 
-export class VehicleInParking{
-    public numberPlate:string;
+export class VehicleInParkingModel{
+	public numberPlate:string;
+	public type:string;
 	public entryDate:Date;
-	public vehicleType:string;
+	
 }

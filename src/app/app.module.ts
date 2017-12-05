@@ -10,6 +10,7 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateEntryComponent } from './create-entry/create-entry.component';
 import { CreateDepartureComponent } from './create-departure/create-departure.component';
 import { DetailsRegistersComponent } from './details-registers/details-registers.component';
+import { VehiclesInParkingComponent } from './vehicles-in-parking/vehicles-in-parking.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { DetailsRegistersComponent } from './details-registers/details-registers
     CreateVehicleComponent,
     CreateEntryComponent,
     CreateDepartureComponent,
-    DetailsRegistersComponent
+    DetailsRegistersComponent,
+    VehiclesInParkingComponent
   ],
   imports: [
     BrowserModule,

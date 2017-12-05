@@ -7,6 +7,7 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateEntryComponent } from './create-entry/create-entry.component';
 import { CreateDepartureComponent } from './create-departure/create-departure.component';
 import { DetailsRegistersComponent } from './details-registers/details-registers.component';
+import { VehiclesInParkingComponent } from './vehicles-in-parking/vehicles-in-parking.component';
 
 
 const routes: Routes= [
@@ -16,8 +17,8 @@ const routes: Routes= [
   {path : 'createVehicle', component: CreateVehicleComponent },
   {path : 'createEntry', component: CreateEntryComponent },
   {path : 'createDeparture', component: CreateDepartureComponent },
-  {path : 'detailsRegisters', component: DetailsRegistersComponent }
-  
+  {path : 'detailsRegisters', component: DetailsRegistersComponent },
+  {path : 'vehiclesInParking', component: VehiclesInParkingComponent }
 ]
 
 @NgModule({
