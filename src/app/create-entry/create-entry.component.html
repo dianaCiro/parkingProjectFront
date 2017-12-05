@@ -3,7 +3,7 @@
     <form action="/action_page.php" class="main-form">
       <div *ngIf="registerEntry" class="alert alert-success"> <strong>Well done!</strong> Vehicle successfully entered into the parking</div>
       <div *ngIf="!isValid" class="alert alert-danger" role="alert">
-        <strong>Danger!</strong> {{message}}
+        <strong>{{messageEntry}}</strong> {{message}}
       </div>
   
       <label for="numberPlate">Number plate</label>
