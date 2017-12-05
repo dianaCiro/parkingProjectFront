@@ -1,9 +1,8 @@
-
-<div class="menu">
-    <button type="button" [routerLink]="['/vehicle']" class="btn btn-primary">Registered vehicles</button>
-    <button type="button" [routerLink]="['/createVehicle']" class="btn btn-primary">Add vehicle</button>
-    <button type="button" [routerLink]="['/detailsRegisters']" class="btn btn-primary">Details registers in parking</button>
-    <button type="button" [routerLink]="['/vehiclesInParking']" class="btn btn-primary">Vehicles in parking</button>
+<ul>
+    <li><a href="/createVehicle">Create vehicle</a></li>
+    <li><a  href="/vehicle">List vehicles</a></li>
+    <li><a href="/detailsRegisters">Details registers in parking</a></li>
+    <li><a href="/vehiclesInParking">Vehicles in parking</a></li>
     
-</div>
+  </ul>
 <router-outlet></router-outlet>
