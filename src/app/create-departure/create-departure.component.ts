@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { VehicleModel } from '../model/vehicle.model';
 import { CreateDepartureService } from './create-departure.service';
 import { Router } from '@angular/router';
-import { OK } from '../model/httpStatus';
+import { OK, VEHICLE_NOT_REGISTERED } from '../model/httpStatus';
 
 @Component({
   selector: 'app-create-departure',
@@ -31,16 +31,16 @@ export class CreateDepartureComponent implements OnInit {
     this.isValid = this.createDepartureService.validate(this.vehicle);
     if(this.isValid){
       this.createDepartureService.saveEntry(this.vehicle).subscribe(res => {
-        console.log(res.responseCode);
         if(res.responseCode == OK){
           this.router.navigate(['/detailsRegisters']);
+        }else if(res.responseCode == VEHICLE_NOT_REGISTERED){
+          this.message = res.message;
+          this.isValid = false;
         }else{
           this.message = res.message;
           this.isValid = false;
         }
       });
-    }else{
-      this.message = "Fields with * are required";
     }
   }
 }
