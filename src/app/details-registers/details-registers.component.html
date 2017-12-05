@@ -1,0 +1,27 @@
+<h1>Vehicles in parking</h1>
+<div style="padding:15px"></div>
+<table  class="table">
+  <thead>
+    <tr>
+      <th>NumberPlate</th>
+      <th>Cylinder</th>
+      <th>Brand</th>
+      <th>Vehicle Type</th>
+      <th>EntryTime</th>
+      <th>DepartureTime</th>
+      <th>Payment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of detailsRegisters">
+      <td>{{item.vehicle.numberPlate}}</td>
+      <td>{{item.vehicle.cylinder}}</td>
+      <td>{{item.vehicle.brand}}</td>
+      <td>{{item.vehicle.vehicleType}}</td>
+      <td>{{item.entryTime | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+      <td>{{item.departureTime | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+      <td>{{item.payment}}</td>
+     </tr>
+    
+  </tbody>
+</table>

@@ -7,9 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
-import { DetailsVehicleParkingComponent } from './details-vehicle-parking/details-vehicle-parking.component';
 import { CreateEntryComponent } from './create-entry/create-entry.component';
 import { CreateDepartureComponent } from './create-departure/create-departure.component';
+import { DetailsRegistersComponent } from './details-registers/details-registers.component';
 
 
 @NgModule({
@@ -17,9 +17,9 @@ import { CreateDepartureComponent } from './create-departure/create-departure.co
     AppComponent,
     VehicleComponent,
     CreateVehicleComponent,
-    DetailsVehicleParkingComponent,
     CreateEntryComponent,
-    CreateDepartureComponent
+    CreateDepartureComponent,
+    DetailsRegistersComponent
   ],
   imports: [
     BrowserModule,

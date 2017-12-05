@@ -6,6 +6,7 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateEntryComponent } from './create-entry/create-entry.component';
 import { CreateDepartureComponent } from './create-departure/create-departure.component';
+import { DetailsRegistersComponent } from './details-registers/details-registers.component';
 
 
 const routes: Routes= [
@@ -14,7 +15,8 @@ const routes: Routes= [
   {path : 'vehicle', component: VehicleComponent },
   {path : 'createVehicle', component: CreateVehicleComponent },
   {path : 'createEntry', component: CreateEntryComponent },
-  {path : 'createDeparture', component: CreateDepartureComponent }
+  {path : 'createDeparture', component: CreateDepartureComponent },
+  {path : 'detailsRegisters', component: DetailsRegistersComponent }
   
 ]
 

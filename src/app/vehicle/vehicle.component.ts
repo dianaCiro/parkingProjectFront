@@ -12,6 +12,7 @@ import { VehicleModel } from '../model/vehicle.model';
 })
 export class VehicleComponent implements OnInit {
   private vehicles: Array<VehicleModel>
+  private isEntered : boolean = false;
   constructor(private VehicleService: VehicleService, private router: Router) { }
 
   ngOnInit() {
@@ -26,6 +27,7 @@ export class VehicleComponent implements OnInit {
 
   public registerEntry(vehicle: VehicleModel): void{
     sessionStorage.setItem("vehicle" , JSON.stringify(vehicle));
+    this.isEntered = true;
     this.router.navigate(['/createEntry']);
   }
 
