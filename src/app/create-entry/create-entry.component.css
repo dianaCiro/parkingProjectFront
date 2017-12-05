@@ -48,3 +48,8 @@ div {
     background-color: #f2dede;
     border-color: #ebccd1;
 }
+.alert-success {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}

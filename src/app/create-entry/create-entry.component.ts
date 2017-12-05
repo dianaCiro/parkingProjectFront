@@ -15,7 +15,7 @@ export class CreateEntryComponent implements OnInit {
   private vehicle : VehicleModel;
   private isValid : boolean = true;
   private message : string = "";
-
+  private registerEntry : boolean = false;
   constructor(private createEntryService : CreateEntryService, private router : Router) { 
     if(sessionStorage.getItem("vehicle")){
       this.vehicle = JSON.parse(sessionStorage.getItem("vehicle"));
@@ -33,8 +33,10 @@ export class CreateEntryComponent implements OnInit {
       this.createEntryService.saveEntry(this.vehicle).subscribe(res => {
         console.log(res.responseCode);
         if(res.responseCode == OK){
+          this.registerEntry = true;
           this.router.navigate(['/detailsRegisters']);
         }else{
+          this.registerEntry = false;
           this.message = res.message;
           this.isValid = false;
         }

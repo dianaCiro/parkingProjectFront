@@ -1,0 +1,20 @@
+h1{
+    margin-left: 5%;
+}
+table{
+    margin-left: 5%;
+}
+.buttonp{
+    
+        border-radius:5px;
+        background-color: dodgerblue;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+    
+}
